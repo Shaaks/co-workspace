@@ -1,23 +1,24 @@
 *{
+    padding: 0px;
     margin: 0;
-    padding: 0;
-    border: none;
+    box-sizing: border-box;
 }
+
+
 header {
-    /* padding: 20px; */
+    
     position: fixed;
+    padding: 5px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     display: flex;
     font-family: "Poppins-Regular";
-    /* font-family: Arial, Helvetica, sans-serif; */
+    
 }
 header ul{
     display: flex;
-    /* margin-left: 35px; */
     list-style-type: none;
-    /* margin-top: 15px; */
 }
 header ul li a{
     text-decoration: none;
@@ -38,9 +39,12 @@ header ul li a{
 img{
     width: 40px;
 }
+.Hero .Hero-inner h1{
+    font-family: "Poppins-regular";
+}
 .Hero .Hero-inner{
     text-align: center;
-    font-family: "Poppins-Regular";
+    font-family: "honeyscript";
     color: white;
     position: relative;
     top: 50%;
@@ -50,11 +54,10 @@ img{
 .services {
     color: grey;
     text-align: center;
-    /* font-family: sans-serif; */
     font-family: "Poppins-Regular";
 }
 .services h3{
-    padding: 10px;
+    /* padding: 10px; */
     margin-top: 30px;
 }
 .services p{
@@ -91,7 +94,7 @@ img{
     color: gray;
 }
 .sign-up button{
-    background-color: orange;
+    background-color: #ECA052;
     color: white;
     font-family: "Poppins-Regular";
     /* font-family:Arial, Helvetica, sans-serif; */
@@ -99,8 +102,9 @@ img{
     font-weight: bold;
     margin:0 auto;
     padding: 0 18px;
+    border: none;
     /* border-radius: 5px; */
-    border-color: orange;
+    /* border-color:#ECA052; */
     margin-bottom: 10px;
 }
    .happy h2{
@@ -111,44 +115,33 @@ img{
     font-size: 20px;
     background-color: white;
 }
-.comments{
-    /*  */
-    /* padding: 5%; */
-    
-     
-}
 .comments h2{
     margin: 30px auto;
     display: block;
     width: max-content;
-    /* font-size: 35px; */
-    font-family: arial;
+    font-size: 25px;
+    font-family: 'Poppins-Regular';
+}
+.comment-items{
+    padding: 15px;
 }
 .comment-inner{
-    
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-size: 12px;
+    font-size: 13px;
     font-family: "Poppins-Regular";
     background-color:whitesmoke;
     color: gray;
-    flex-direction: column;
     padding: 20px 10px;
 }
-.comment-inner h4{
-padding: 15px;
-color: black;
-}
+.comment-inner h4{padding: 0px;color: black;}
 .Sub{
-    background-color: orange;
+    background-color:#ECA052;
     padding: 5px;
-    /* display: flex; */
 }
 
 .Sub-inner h5{
     text-align: center;
     font-size: 20px ;
     font-family: "Poppins-Regular";
-    /* font-family:Arial, Helvetica, sans-serif; */
     color:white;
     margin-top:20px ;
     margin-bottom: 20px;
@@ -157,43 +150,47 @@ color: black;
     padding: 7px;
     margin-bottom: 5px;
     border-radius: 20px 0px 0px 20px;
-    border: orange;
-    /* margin-right: 5px; */
-    height: 15px;
-    width:80px;
+    border:#ECA052;
+    height: 25px;
+    width: 85px;
 }
 .Sub-inner #email{
     padding: 5px;
     margin-bottom: 5px;
     border-radius: 0px 20px 20px 0px;
-    border: orange;
-    height: 19px;
-    width:80px;
+    border: #ECA052;
+    height: 25px;
+    width: 85px;
 } 
 .Sub-inner #sub{
     padding: 5px;
     margin-bottom: 35px;
     margin-left: 10px;
     border-radius: 20px 20px 20px 20px;
-    font-weight: bolder;
     color: white;
-    background-color: black;
-    width:100px;
-    height: 35px;
+    background-color:#393939;
+    width: 100px;
+    height: 30px;
     font-size: 14px;
+    border: none;
 }
 .base {
-    background-color: black;
+    background-color: #393939;
     padding: 5px;
 }
+.base hr{
+    width: 100px;
+    height: 1px;
+    margin: auto;
+    margin-bottom: -20px;
+    border-color: #393939;
+}
+
 .base img{
     width: 40px;
     position: relative;
     left: 50%;
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
     transform: translateX(-50%);
-    /* margin-left: 120px; */
 }
 
 .link ul{
@@ -221,9 +218,19 @@ color: black;
 }
 
 @media(min-width:568px){
-    .services{ 
-        font-size: 30px;
+    .services{
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
     } 
+    .services h3{
+        padding: 0;
+        font-size: 15px;
+    }
+    .comment-inner{
+        display: flex;
+    }
+
     .happy{
         text-align: center;
     }
@@ -232,21 +239,8 @@ color: black;
     .Sub-inner h5 {
         text-align: center;
     }
-    .Sub-inner #name {
-        /* margin-left: 100px; */
-    }
-    .base img{
-        /* margin-left: 280px; */
-        /* position: relative;
-        top: 1px; */
-        /* left: 140px; */
-        
-    }
-    .comment-inner{
-        flex-direction: row;
-    }
+    
     form{
-        /* margin: 10px 30px 0px 120px; */
         margin: 0 auto;
         width: max-content;
     }
@@ -255,15 +249,14 @@ color: black;
 
 }
 @media(min-width:568px){
-    .services p{ 
-        font-size: 20px;
+    .services p{
+        font-size: 11px;
     }
 
 }
 
 @media(min-width:568px){
     .Hero .Hero-inner{   
-        /* color: rgb(255, 0, 0); */
         font-size: 30px;
     }
     header ul {
@@ -275,8 +268,6 @@ color: black;
 
 @media(min-width:768px){
     .Hero .Hero-inner{
-        
-        /* color:yellow; */
         font-size: 40px;
     }
     .services{
@@ -289,11 +280,9 @@ color: black;
         color: rgb(32, 30, 30);
     }
     .services .serv-items p{
-        font-size: 12px;
+        font-size: 17px;
     }
-    header ul{
-        /* margin-left: 375px; */
-    }
+    
     header ul li a{
         font-size: 15px;
     }
@@ -306,22 +295,23 @@ color: black;
     }
     .comments{
         
-        display:flex;
-        flex-wrap:wrap;
-        /* margin-left: 30px; */
-        /* margin-right: 30px; */
-        /* margin-bottom: 30px; */
+display:flex;
+        
+flex-wrap:wrap;
+        
+background-color: white;
+    }
+    .comments .comment-inner p{
+        padding: 4px;
     }
     .comment-inner{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-size: 18px;
+        display: flex;
         color: gray;
-        /* padding: 5px; */
-        /* margin-top: 50px; */
-        /* margin-bottom: 30px; */
     }
     .comment-inner h4{
-    padding: 20px;
+    padding: 10px;
     color: rgb(27, 23, 23);
     }
     .sign-up{
@@ -335,7 +325,7 @@ color: black;
         margin-top: 30px;
     }
     .sign-up h2{
-        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: Arial, Helvetica, sans-serif; */
         font-size: 30px;
         text-align: center;
         margin-bottom: 30px;
@@ -343,14 +333,14 @@ color: black;
     }
     .sign-up p{
         text-align: center;
-        font-family: sans-serif;
+        /* font-family: sans-serif; */
         font-size: 20px;
         margin-bottom: 50px;
         margin-top: 10px;
         color: gray;
     }
     .sign-up button{
-        background-color: orange;
+        background-color: #ECA052;
         color: white;
         font-family:Arial, Helvetica, sans-serif;
         font-size: 23px;
@@ -358,40 +348,38 @@ color: black;
         margin:0 auto;
         padding: 5px;
         /* border-radius: 5px; */
-        border-color: orange;
+        border-color: #ECA052;
         margin-bottom: 25px;
     }
     .Sub-inner #name{
         padding: 10px;
         margin-bottom: 20px;
         border-radius: 20px 0px 0px 20px;
-        border: orange;
+        border: #ECA052;
         margin-right: 5px;
-        height: 20px;
-        width: 90px;
+        height: 35px;
+        width: 130px;
         font-size: 17px;
-        /* margin-left: 160px; */
     }
     .Sub-inner #email{
         padding: 10px;
         margin-bottom: 20px;
         border-radius: 0px 20px 20px 0px;
-        border: orange;
-        height: 20px;
-        width: 90px;
+        border: #ECA052;
+        height: 35px;
+        width: 130px;
         font-size: 17px;
     } 
     .Sub-inner #sub{
         padding: 5px;
         margin-bottom: 35px;
-        /* margin-left: 10px; */
         border-radius: 20px 20px 20px 20px;
-        font-weight: bolder;
         color: rgb(236, 233, 233);
         background-color: rgb(31, 26, 26);
-        width: 100px;
-        height: 40px;
+        width: 129px;
+        height: 35px;
         font-size: 16px;
+        border: none;
     }
     .link ul{
         display: flex;
@@ -419,52 +407,45 @@ color: black;
         margin-top: 30px;
     }
     .base img{
-        /* margin-left: 320px; */
-        /* width: 50px; */
+        width: 70px;
         padding: 20px;
     }
     .base hr{
         width: 400px;
         height: 2px;
         background-color:#333;
-        margin: auto;
+        /* margin: auto; */
     }
 
 }
 
 
 .Sub-inner h5 {
-    /* margin: 30px auto 30px 80px; */
     font-size: 20px;
 }
     
     .comment-inner{
-        display: flex;
+        /* display: flex; */
+        /* flex-wrap: nowrap; */
+        align-content: center;
+        /* width: 94%; */
     }
 
 
 
 @media(min-width:992px){
     .Hero .Hero-inner{   
-        /* color: chartreuse; */
         font-size: 50px;
     }
 
-    header ul{
-        /* margin-left: 550px; */
-    }
     header ul li a{
         font-size: 17px;
     }
-    header img{
-        /* margin-left: 70px; */
-        /* width: 100px; */
-        /* height: 80px; */
-    }
+    
     .services {
         color: grey;
         text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     }
     .services .serv-items h3{
         padding: 10px;
@@ -490,7 +471,7 @@ color: black;
         margin-top: 30px;
     }
     .sign-up h2{
-        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: Arial, Helvetica, sans-serif; */
         font-size: 33px;
         text-align: center;
         margin-bottom: 30px;
@@ -498,23 +479,22 @@ color: black;
     }
     .sign-up p{
         text-align: center;
-        font-family: sans-serif;
+        /* font-family: sans-serif; */
         font-size: 20px;
         margin-bottom: 50px;
         margin-top: 10px;
         color: gray;
+        width: 705px;
     }
     .sign-up button{
-        background-color: orange;
+        background-color:#ECA052;
         color: white;
         font-family:Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 20px;
         margin:0 auto;
-        padding: 5px;
-        /* border-radius: 5px; */
-        border-color: orange;
+        padding: 8px;
         margin-bottom: 25px;
+        border: none;
     }
     .happy h2{
         padding: 100px;
@@ -524,34 +504,32 @@ color: black;
         background-color: white;
     }
     .comments{
-        /* background-color:whitesmoke; */
         margin-left: 40px;
         margin-right: 40px;
         margin-bottom: 50px;
     }
     .comment-inner{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-size: 19px;
         color: gray;
         padding: 5px;
         margin-top: 50px;
         margin-bottom: 60px;
     }
     .comment-inner h4{
-    padding: 30px;
+    padding: 10px;
     color: black;
+    margin-bottom: 17px;
     }
     .Sub-inner h5 {
-        /* margin-left: 150px; */
         font-size: 38px;
     }
     .Sub-inner #name{
         padding: 7px;
         margin-bottom: 20px;
         border-radius: 20px 0px 0px 20px;
-        border: orange;
-        /* margin-right: 5px; */
-        height: 25px;
+        border:#ECA052;
+        height: 45px;
         width:140px;
         font-size: 17px;
     }
@@ -559,21 +537,23 @@ color: black;
         padding: 7px;
         margin-bottom: 20px;
         border-radius: 0px 20px 20px 0px;
-        border: orange;
-        height: 25px;
+        border: #ECA052;
+        height: 45px;
         width:140px;
         font-size: 17px;
+        
     } 
     .Sub-inner #sub{
         padding: 5px;
         margin-bottom: 35px;
         margin-left: 10px;
         border-radius: 20px 20px 20px 20px;
-        font-weight: bolder;
         color: white;
-        background-color: rgb(31, 26, 26);
-        width:140px;height: 42px;
+        background-color: #393939;
+        width:140px;
+        height: 42px;
         font-size: 18px;
+        border: none;
     }
     .link ul{
         display: flex;
@@ -600,8 +580,7 @@ color: black;
         margin-bottom: 50px;
     }
     .base img{
-        /* margin-left: 450px; */
-        width: 50px;
+        width: 80px;
         padding: 20px;
     }
 
@@ -612,38 +591,40 @@ color: black;
 
 @media(min-width:1200px){
     .Hero .Hero-inner{        
-        /* color: palevioletred; */
         font-size: 60px;
     }
-    header ul{
-        /* margin-left: 900px; */
-    }
+    
     header ul li a{
         font-size: 20px;
     }
     header img{
-        margin-left: 50px;
-        width: 100px;
-        height: 80px;
+        width: 60px;
+        height: 65px;
         margin-top: 10px;
     }
+    .Hero .Hero-inner h1{
+        font-size: 51px;
+    }
     .services {
-        color: grey;
+        color :#C0BBB6;
         text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Poppins-Regular';
+        /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     }
     .services .serv-items h3{
         padding: 10px;
-        margin-top: 160px;
-        margin-bottom: 30px;
-        font-size:40px;
+        margin-top: 90px;
+        margin-bottom: 20px;
+        font-size: 22px;
+        
     }
     .services .serv-items p{
-        font-size: 20px;
+        font-size: 15px;
         margin-left: 40px;
         margin-right: 40px;
         margin-bottom: 80px;
         margin-top: 20px;
+        color:#A9AFAB;
     }
     .sign-up{
         text-align: center;
@@ -656,91 +637,101 @@ color: black;
         margin-top: 30px;
     }
     .sign-up h2{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 33px;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-size: 30px;
         text-align: center;
         margin-bottom: 30px;
         color:rgb(85, 76, 76);
     }
     .sign-up p{
         text-align: center;
-        font-family: sans-serif;
+        /* font-family: sans-serif; */
         font-size: 20px;
         margin-bottom: 50px;
-        margin-top: 10px;
+        margin-top: 11px;
         color: gray;
+        margin: 26px auto;
     }
     .sign-up button{
-        background-color: orange;
+        background-color: #ECA052;
         color: white;
         font-family:Arial, Helvetica, sans-serif;
         font-size: 25px;
         font-weight: bold;
         margin:0 auto;
         padding: 20px;
-        /* border-radius: 5px; */
-        /* border-color: orange; */
+        border-radius: none;
         margin-bottom: 25px;
+        border: none;
     }
     .happy h2{
         padding: 100px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(92, 88, 88);
+        color: #62686E;
         font-size: 30px;
         background-color: white;
     }
     .comments{
-        /* background-color:whitesmoke; */
-        /* margin-left: 40px; */
-        /* margin-right: 40px; */
         margin-bottom: 50px;
+        display: flex;
     }
-    .comment-inner{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        color: gray;
+    .comments h2{
+        color: #393939;
+    }
+    .comments .comment-inner P{
+        color: #AFAFB9;
         padding: 5px;
+        margin-top: 40px;
+    }
+    
+    .comment-inner{
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-size: 16px;
+        color: gray;
+        padding: 0px;
         margin-top: 50px;
-        margin-bottom: 60px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
     }
     .comment-inner h4{
-    padding: 30px;
-    color: black;
+    padding: 5px;
+    color:#AFAFB9;
+    margin-bottom: 50px;
     }
     .Sub-inner h5 {
-        /* margin-left: 350px; */
-        font-size: 38px;
+        font-size: 45px;
     }
     .Sub-inner #name{
         padding: 7px;
         margin-bottom: 20px;
-        border-radius: 20px 0px 0px 20px;
-        border: orange;
+        border-radius: 50px 0px 0px 50px;
+        border:#ECA052;
         margin-right: 5px;
-        height: 25px;
-        width:140px;
+        height: 50px;
+        width: 180px;
         font-size: 17px;
-        /* margin-left: 350px; */
     }
     .Sub-inner #email{
         padding: 7px;
         margin-bottom: 20px;
-        border-radius: 0px 20px 20px 0px;
-        border: orange;
-        height: 25px;
-        width:140px;
+        border-radius: 0px 50px 50px 0px;
+        border: #ECA052;
+        height: 50px;
+        width: 180px;
         font-size: 17px;
     } 
     .Sub-inner #sub{
         padding: 5px;
         margin-bottom: 35px;
         margin-left: 10px;
-        border-radius: 20px 20px 20px 20px;
-        font-weight: bolder;
+        border-radius: 50px 50px 50px 50px;
+        font-weight: normal;
         color: white;
-        background-color: rgb(31, 26, 26);
-        width:140px;height: 42px;
-        font-size: 18px;
+        background-color: #393939;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
     }
     .link ul{
         display: flex;
@@ -771,5 +762,6 @@ color: black;
         padding: 20px;
         width: max-content;
      }
+     
 
 }

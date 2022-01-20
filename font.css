@@ -3,4 +3,9 @@
     font-style: normal;
     src:url("./font/Poppins-Regular.ttf")
 }
+@font-face {
+    font-family: "honeyscript";
+    font-style: normal;
+    src:url("./font/honeyscript-light-webfont.ttf")
+}
 
